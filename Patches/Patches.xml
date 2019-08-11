@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/ResearchProjectDef[defName="BiofuelRefining" or defName="NutrientPaste" or defName="SolarPanels" or defName="Autodoors" or defName="Hydroponics" or defName="Firefoam" or defName="SterileMaterials" or defName="SmokepopBelt" or defName="Prosthetics" or defName="FlakArmor" or defName="BlowbackOperation" or defName="GasOperation" or defName="GunTurrets" or defName="FlatscreenTelevision" or defName="ColoredLights" or defName="MoisturePump" or defName="HospitalBed" or defName="TransportPod" or defName="MedicineProduction" or defName="LongRangeMineralScanner" or defName="ShieldBelt" or defName="PrecisionRifling" or defName="HeavyTurrets" or defName="MultibarrelWeapons"]</xpath>
+		<value>
+			<requiredResearchFacilities>
+			  <li>MultiAnalyzer</li>
+			</requiredResearchFacilities>
+		</value>
+	</Operation>
+	<!-- modify MicroelectronicsBasics -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ResearchProjectDef[defName="MicroelectronicsBasics"]/label</xpath>
+		<value><label>Radio</label></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="OrbitalTradeBeacon" or defName="HiTechResearchBench"]/researchPrerequisites</xpath>
+		<value><researchPrerequisites><li>MultiAnalyzer</li></researchPrerequisites></value>
+	</Operation>
+</Patch>

@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Western Tech</name>
+	<author>dninemfive</author>
+	<supportedVersions><li>1.0</li></supportedVersions>
+	<description>Makes it impossible to research any techs beyond the industrial era, and disables several industrial techs which are more advanced than were available in the late 1800s.</description>
+</ModMetaData>
